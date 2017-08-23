@@ -9,6 +9,13 @@
 }
 
 /*-----------------------------meMedia----------------------*/
+.meSkills{
+      background: linear-gradient(to bottom right, silver 1%, white 50%); 
+    border:1px solid black;
+    width:25rem;
+    margin-right:2rem;
+}
+
 @media only screen and (min-width: 990px){
     #me > div.meWrapper > div{
         margin-left:16%;
@@ -50,7 +57,7 @@
          @media only screen and (min-width:990px){
    #me .homeImg{
          margin-right: 30%;
-         border:10px solid black;
+         border:1px solid black;
      }
  }
 
@@ -62,8 +69,8 @@
 border:2px solid black;
 margin-left:2rem;
 margin-right:-4rem;
-max-height: 28rem;
-max-width: 35rem;
+max-height: 25rem;
+width: 25rem;
 margin-top:1rem;
 border-radius:9%;
 }
