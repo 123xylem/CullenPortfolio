@@ -15,15 +15,13 @@ body{
    margin:0;
    margin-bottom: 5rem;
    padding:0;
+   width:100%;
 }
 
 .navbar{
     margin-bottom: 10rem;
 }
 
-.thirdCol{
-    float:left;
-}
 
 h1{
     font-size:3rem;

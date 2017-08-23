@@ -2,21 +2,70 @@
     }
 
 .meWrapper{
-    margin-left:10rem;
+    margin-left:7rem;
     margin-right:10rem;
     margin-bottom: 10rem;
 
 }
+
+/*-----------------------------meMedia----------------------*/
+@media only screen and (min-width: 990px){
+    #me > div.meWrapper > div{
+        margin-left:16%;
+    }
+    }
+    
+ 
+
+
+         @media only screen and (min-width:700px){
+   #me .homeImg{
+         margin-right: 0%;
+         border:10px solid black;
+     }
+ }
+ 
+  @media only screen and (min-width:750px){
+   #me .homeImg{
+         margin-right: 15%;
+         border:10px solid black;
+     }
+ }
+   @media only screen and (min-width:800px){
+   #me .homeImg{
+         margin-right: 10%;
+         border:10px solid black;
+     }
+ }
+
+   @media only screen and (min-width:890px){
+   #me .homeImg{
+         margin-right: 15%;
+         border:10px solid black;
+     }
+ }
+
+
+    
+         @media only screen and (min-width:990px){
+   #me .homeImg{
+         margin-right: 30%;
+         border:10px solid black;
+     }
+ }
+
+    
+ 
  
     .homeImg{
-float:right;
-border:1px solid black;
-margin-left:1rem;
-margin-right:5rem;
-max-height: 30rem;
-max-width: 40rem;
+        float:right;
+border:2px solid black;
+margin-left:2rem;
+margin-right:-4rem;
+max-height: 28rem;
+max-width: 35rem;
 margin-top:1rem;
-
+border-radius:9%;
 }
 
 
@@ -24,6 +73,8 @@ margin-top:1rem;
     text-align:center;
     margin-bottom:5rem;
     margin-top:-40px;
+    margin-left:10%;
+    margin-right:10%;
 }
 
 .homeH4{
@@ -41,16 +92,88 @@ text-decoration:underline;
       margin-left:5rem;                
       margin-right:5rem;                
       }
+      
+   
+
+
                       
  #work .projectBox{
-  max-width:35rem;
+     float:left;
+  max-width:50rem;
   height:30rem;
   margin-bottom:3rem;
-  margin-right:3rem;
+  margin-right:30%;
+  margin-left:30%;
   text-align:center;
   padding:1rem; 
   background-color:white;
   }
+  
+ 
+ /*-----------------------WORKProjectBoxes MEDIA---------------------------*/
+     @media only screen and (min-width: 990px){
+ #work .row {
+  margin-left: 5%;
+  }
+}
+     @media only screen and (min-width: 1000px){
+ #work .row {
+  margin-left: 10%;
+  }
+}
+
+   @media only screen and (min-width: 1220px){
+ #work .row {
+  margin-left: -15px;
+  }
+} 
+
+
+
+     @media only screen and (min-width: 550px){
+ #work .projectBox{
+     float:left;
+  height:30rem;
+  width:100%;
+  margin-bottom:3rem;
+  margin-right:3rem;
+  margin-left:3rem;
+  text-align:center;
+  padding:1rem; 
+  background-color:white;
+  }
+}
+     @media only screen and (min-width: 750px){
+ #work .projectBox{
+     float:left;
+  max-width:35rem;
+  height:30rem;
+  margin-bottom:3rem;
+  margin-right:1rem;
+  margin-left:0rem;
+  text-align:center;
+  padding:1rem; 
+  background-color:white;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+ #work .row .projectBox{
+     float:left;
+  max-width:35rem;
+  height:30rem;
+  margin-bottom:3rem;
+  margin-right:3rem;
+  margin-left:1rem;
+  text-align:center;
+  padding:1rem; 
+  background-color:white;
+  }
+}
+
+
+/*--------------WORK MEDIA^^----------------------------------------------*/
+
                       
 #work .projectBox h6{
 font-weight:600;
