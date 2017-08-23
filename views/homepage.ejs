@@ -8,11 +8,6 @@
          <div class="container">
              
              <div class="row">
-       <script>  
-                 $(".homeImg").click(function(){
-                     $(".homeImg").hide();
-                 });
-</script>
                           <div class="col">
                        <img class="homeImg" src ="https://image.ibb.co/csbaU5/portrait.png">
 
@@ -22,7 +17,7 @@
                 <div class="col">
                    <div class="expandable" >
                                       <a href="#">  <h4 class="homeH4">  <strong> Front end Web Development Services </strong>: </h4> </a>
-<div class="showMe" >
+<div class="showMe" style="display:none" >
     
                         <ul >
 
@@ -42,9 +37,10 @@
 
                          
                         <br></br>
-                        
-                 <h4 class="homeH4"><strong>SEO Services  </strong> : </h4>
-                                   <div class="expandable" >
+                                                           <div class="expandable2" >
+
+               <a href="#">  <h4 class="homeH4"><strong>SEO Services  </strong> : </h4></a>
+<div class="showMe2" style="display:none" >
 
                           <ul >
                             <li>   Search Engine Optimisation </li>
@@ -73,7 +69,7 @@
    
         <div id="work">
             <div class="workWrapper">
-                            <h4 class="homeH4"><strong>Past Projects</strong> </h1>
+                            <h4 class="homeH3"><strong>Past Projects</strong> </h1>
             <div class="container">
                  <div class="row">
            <div class="col">
@@ -141,7 +137,7 @@
                              </p>
                          </div>
                      </div>         
-                     
+                     <div class="btn btn-default" style="text-align:center; margin-left:45%; margin-right:50%;"><a href="/projects">More Projects</a></div>
 
        </div>
        
@@ -150,12 +146,51 @@
             <div class="clearfix"></div>
             
         </div>
+</div>
+        </div>
 
+<!------------------------------------------------------CONTACT DIV--------------------------------------->
+<div id="contact">
+    <div class="contactWrapper">
+        
+ <div class="container">
+        <div class="row">
+            <div class="col-4 contactBox">
+                    <ul class="contactList">
+      <li > <strong>Email:</strong> Cucullen111@lycos.com </li>
+      <li><strong>Phone:</strong> 0426032094 </li>
+               
+      </ul>
 
+            </div>
+                        <div class="col-4 contactBox">
+                <ul>
+                    <li>Github<i class="fa fa-github-square" aria-hidden="true"></i> </li>
+                    <li><i class="fa fa-codepen" aria-hidden="true"></i> </li>
+                    <li> <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+</li>
+
+                </ul>
+            </div>
+            
+            <div class="col-4 contactBox">
+                <p>Hi</p>
+            </div>
+            
+
+            
+        
+        
+    </div>
+    
+    
+    
+    
                 
             </div>
 
-      
+          </div>
+   
 
 
     
@@ -163,6 +198,17 @@
     
 
 
+       <script>  
+                 $(".expandable").click(function(){
+                     $(".showMe").slideToggle();
+
+                 });
+
+                 
+                 $(".expandable2").click(function(){
+                     $(".showMe2").slideToggle();
+                 });
+</script>
 
 
 
