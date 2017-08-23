@@ -1,0 +1,78 @@
+#me{background-color:white;
+    }
+
+.meWrapper{
+    margin-left:10rem;
+    margin-right:10rem;
+    margin-bottom: 10rem;
+
+}
+ 
+    .homeImg{
+float:right;
+border:1px solid black;
+margin-left:1rem;
+margin-right:5rem;
+max-height: 30rem;
+max-width: 40rem;
+margin-top:1rem;
+
+}
+
+
+.homeTitle{
+    text-align:center;
+    margin-bottom:5rem;
+    margin-top:-40px;
+}
+
+.homeH4{
+margin-top:1rem;    
+text-decoration:underline;
+}
+
+
+                      /*--------------------------------WORK CSS-------------------------------*/
+ #work{
+     background-color:#eee9e9;
+
+ }
+ .workWrapper{
+      margin-left:5rem;                
+      margin-right:5rem;                
+      }
+                      
+ #work .projectBox{
+  max-width:35rem;
+  height:30rem;
+  margin-bottom:3rem;
+  margin-right:3rem;
+  text-align:center;
+  padding:1rem; 
+  background-color:white;
+  }
+                      
+#work .projectBox h6{
+font-weight:600;
+padding:2px;
+text-align:center;
+  color:black;
+  font-size:2rem;
+}
+
+#work .projectBox img{
+height:12rem;
+width:12rem;  
+  border:1px solid rgba(111, 111,111, 0.5);
+}
+
+#work .projectBox .caption{
+    text-align:center;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+#work .projectBox:hover{
+  transform:scale(1.1);
+  transition: all .2s ease-out;
+}
