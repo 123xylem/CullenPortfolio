@@ -26,10 +26,9 @@ body{
 
 h1{
     font-size:3rem;
-    font-weight: 700;
+    font-weight: 800;
     text-decoration: underline;
- margin-left: 5rem;
- margin-bottom:5rem;}
+ }
 
 h2{
     text-decoration: underline;
@@ -37,6 +36,23 @@ h2{
      margin-bottom:5rem;
     
 }
+.btn{
+       background: linear-gradient(to bottom right, silver 5%, white 50%); 
+
+}
+.btn:hover{
+    transition:all 0.3s ease-out;
+   transform:scale(1,1.3);         
+
+}
+
+
+a i:hover{
+    transform:scale(1,1.2);
+        transition:all 0.2s ease-in;
+
+}
+
 
 #me{background-color:white;
     }
@@ -47,6 +63,17 @@ h2{
     margin-bottom: 10rem;
 
 }
+
+.homeTitle{
+    text-align:center;
+display:inline-block; 
+padding:0rem 2rem 1rem 2rem;
+    margin:-4rem 30% 5rem 30%;
+    border-radius: 5%;
+   background: linear-gradient(to bottom right, silver 1%, white 50%); 
+}
+
+
 
 .expandable{
           background: linear-gradient(to bottom right, silver 1%, white 50%); 
@@ -67,29 +94,278 @@ h2{
 }
 
 
-.homeTitle{
-    text-align:center;
-    margin-bottom:5rem;
-    margin-top:-40px;
-    margin-left:10%;
-    margin-right:10%;
-}
 
 .homeH4{
+    display:inline-block; 
+padding:1rem 2rem 1rem 2rem;
+
     font-weight: 600;
     color:black;
 margin-top:1rem;    
     text-align: center;
-
 text-decoration:underline;
+  /*-webkit-animation-iteration-count: 4;*/
+  -webkit-animation-delay:1.2s;
+  /*-webkit-animation-duration:1.2s;*/
+
 }
 
-/*.expandable{*/
-/*    float:right;*/
-/*}*/
-/*.expandable2{*/
-/*    float:left;*/
-/*}*/
+
+
+
+
+                      /*--------------------------------WORK CSS-------------------------------*/
+.homeH3{
+    font-size:2.2rem;
+    margin-left:2rem;
+margin-bottom:3rem;    
+text-decoration:underline;
+font-weight:600;
+text-align:center;
+
+}
+
+ #work{
+     padding-top:3rem;
+     background-color:#eee9e9;
+
+ }
+ .workWrapper{
+      margin-left:5rem;                
+      margin-right:5rem;       
+      padding-bottom: 3rem;
+      }
+      
+   
+
+
+                      
+ #work .projectBox{
+     float:left;
+  max-width:50rem;
+  height:30rem;
+  margin-bottom:3rem;
+  margin-right:30%;
+  margin-left:30%;
+  text-align:center;
+  padding:1rem; 
+  background-color:white;
+  }
+
+     @media only screen and (min-width: 550px){
+ #work .projectBox{
+     float:left;
+  height:30rem;
+  width:100%;
+  margin-bottom:3rem;
+  margin-right:3rem;
+  margin-left:3rem;
+  text-align:center;
+  padding:1rem; 
+  background-color:white;
+  }
+}
+     @media only screen and (min-width: 750px){
+ #work .projectBox{
+     float:left;
+  max-width:35rem;
+  height:30rem;
+  margin-bottom:3rem;
+  margin-right:1rem;
+  margin-left:0rem;
+  text-align:center;
+  padding:1rem; 
+  background-color:white;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+ #work .row .projectBox{
+     float:left;
+  max-width:35rem;
+  height:30rem;
+  margin-bottom:3rem;
+  margin-right:3rem;
+  margin-left:1rem;
+  text-align:center;
+  padding:1rem; 
+  background-color:white;
+  }
+}
+
+
+ 
+                      
+#work .projectBox h6{
+font-weight:600;
+padding:2px;
+text-align:center;
+  color:black;
+  font-size:2rem;
+}
+
+#work .projectBox img{
+height:12rem;
+width:12rem;  
+  border:1px solid rgba(111, 111,111, 0.5);
+}
+
+#work .projectBox .caption{
+    text-align:center;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+#work .projectBox:hover{
+  transform:scale(1.1);
+  transition: all .2s ease-out;
+}
+
+
+
+
+
+
+/*---------------------------------------CONTACT _______________-------------------------------*/
+
+#contact{
+background: linear-gradient(to bottom right, silver 1%, white 50%); 
+}
+ .contactWrapper{
+      margin-left:5rem;                
+      margin-right:5rem;       
+      margin-bottom:3rem;
+      }
+      
+      
+      
+
+@media only screen and (max-width:770px){
+          .lastCol{
+              display:none;
+              content:"";
+          }
+          .contactBox{
+              width:50%;
+          }
+      }
+
+
+#contact .contactBox{
+    float:left;
+    max-width:40rem;
+    min-width:20rem;
+}
+
+          .homeImg{
+border:2px solid black;
+max-height: 20rem;
+max-width: 25rem;
+margin-top:5rem;
+margin-right:-20rem;
+border-radius:9%;
+}
+
+
+@media only screen and (min-width:990px){
+    .contactSpeech{
+    width:15rem;
+    height:10rem;
+    background-color:white;
+    float:right;
+    font-family: cursive;
+    border:1px solid rgba(255,240,240, 0.5);
+    margin-bottom:5rem;
+    margin-top:5rem;
+    border-top-left-radius:20%;
+    border-top-right-radius:20%;
+    border-bottom-right-radius:20%;
+        font-size:1.4rem;
+    padding:1rem;
+}
+}
+@media only screen and (min-width:1200px){
+.contactSpeech{
+    width:15rem;
+    height:10rem;
+    background-color:white;
+    float:right;
+    font-family: cursive;
+    font-size:1.4rem;
+    border:1px solid rgba(255,240,240, 0.5);
+    margin-right:3.4rem;
+    margin-top: 5rem;
+    margin-bottom:5rem;
+    border-top-left-radius:20%;
+    border-top-right-radius:20%;
+    border-bottom-right-radius:20%;
+    padding:1rem;
+}
+}
+
+
+.contactSpeech p{
+    margin:10% auto;
+    font-size:1.4rem;
+}
+
+
+
+
+.contactBtn{
+    margin:30% 30%;
+    height:5rem;
+    color:black;
+    border:1px solid black;
+    font-size:2.5rem;
+    font-weight:600;
+    -webkit-animation-delay: 5s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#contact .contactList{
+    display:none;
+    margin:28% 1rem;
+    /*margin-left:-5%;*/
+    text-align: center;
+  background: linear-gradient(to bottom right, silver 1%, white 50%); 
+     border-radius:8%;
+
+}
+
+
+
+.iconList{
+    list-style: none;
+            margin-top:30%;
+
+}
+
+.iconList li{
+        display:inline;
+        margin:0.5rem;
+
+}
+
+
+@media only screen and (max-width:999px){
+    .iconList li {
+        margin:0 -0.4rem;
+    }
+}
+
+
+
+.iconList li a{
+    color:black;
+    margin:0 1rem;
+}
+
+
+
+
+
+
 /*-----------------------------meMedia----------------------*/
 
 
@@ -144,194 +420,23 @@ text-decoration:underline;
  
 
 
-
-
-                      /*--------------------------------WORK CSS-------------------------------*/
-.homeH3{
-    font-size:2.2rem;
-    margin-left:2rem;
-margin-bottom:3rem;    
-text-decoration:underline;
-font-weight:600;
-}
-
- #work{
-     padding-top:3rem;
-     background-color:#eee9e9;
-
- }
- .workWrapper{
-      margin-left:5rem;                
-      margin-right:5rem;       
-      /*margin-bottom:3rem;*/
-      padding-bottom: 3rem;
-      }
-      
-   
-
-
-                      
- #work .projectBox{
-     float:left;
-  max-width:50rem;
-  height:30rem;
-  margin-bottom:3rem;
-  margin-right:30%;
-  margin-left:30%;
-  text-align:center;
-  padding:1rem; 
-  background-color:white;
-  }
-  
- 
  /*-----------------------WORKProjectBoxes MEDIA---------------------------*/
-     @media only screen and (min-width: 990px){
- #work .row {
-  margin-left: 5%;
-  }
-}
-     @media only screen and (min-width: 1000px){
- #work .row {
-  margin-left: 10%;
-  }
-}
-
-   @media only screen and (min-width: 1220px){
- #work .row {
-  margin-left: -15px;
-  }
-} 
-
-
-
-     @media only screen and (min-width: 550px){
- #work .projectBox{
-     float:left;
-  height:30rem;
-  width:100%;
-  margin-bottom:3rem;
-  margin-right:3rem;
-  margin-left:3rem;
-  text-align:center;
-  padding:1rem; 
-  background-color:white;
-  }
-}
-     @media only screen and (min-width: 750px){
- #work .projectBox{
-     float:left;
-  max-width:35rem;
-  height:30rem;
-  margin-bottom:3rem;
-  margin-right:1rem;
-  margin-left:0rem;
-  text-align:center;
-  padding:1rem; 
-  background-color:white;
-  }
-}
-
-@media only screen and (min-width: 1200px){
- #work .row .projectBox{
-     float:left;
-  max-width:35rem;
-  height:30rem;
-  margin-bottom:3rem;
-  margin-right:3rem;
-  margin-left:1rem;
-  text-align:center;
-  padding:1rem; 
-  background-color:white;
-  }
-}
-
-
-/*--------------WORK MEDIA^^----------------------------------------------*/
-
-                      
-#work .projectBox h6{
-font-weight:600;
-padding:2px;
-text-align:center;
-  color:black;
-  font-size:2rem;
-}
-
-#work .projectBox img{
-height:12rem;
-width:12rem;  
-  border:1px solid rgba(111, 111,111, 0.5);
-}
-
-#work .projectBox .caption{
-    text-align:center;
-    margin-left:10%;
-    margin-right:10%;
-}
-
-#work .projectBox:hover{
-  transform:scale(1.1);
-  transition: all .2s ease-out;
-}
-
-/*---------------------------------------CONTACT _______________-------------------------------*/
-
-#contact{
-background: linear-gradient(to bottom right, silver 1%, white 50%); 
-}
- .contactWrapper{
-      margin-left:5rem;                
-      margin-right:5rem;       
-      margin-bottom:3rem;
-      }
-      
-      
-      
-          .homeImg{
-border:2px solid black;
-max-height: 20rem;
-max-width: 25rem;
-margin-top:2rem;
-margin-right:-20rem;
-border-radius:9%;
-}
-
-@media only screen and (max-width:770px){
-          .lastCol{
-              display:none;
-              content:"";
-          }
-          .contactBox{
-              width:50%;
-          }
-      }
-
-
-#contact .contactBox{
-    float:left;
-    max-width:40rem;
-    min-width:20rem;
-}
-
-.contactBtn{
-    margin:30% 30%;
-}
-
-#contact .contactList{
-    display:none;
-    margin:28% 0;
-    margin-left:-5%;
-    text-align: center;
-}
-
-.iconList{
-    list-style: none;
-            margin-top:30%;
-
-}
-.iconList li{
-        display:inline;
-        margin:0.5rem;
-        
-}
-
+                                                    /*     @media only screen and (min-width: 990px){*/
+                                                    /* #work .row {*/
+                                                    /*  margin-left: 5%;*/
+                                                    /*  }*/
+                                                    /*}*/
+                                                    /*     @media only screen and (min-width: 1000px){*/
+                                                    /* #work .row {*/
+                                                    /*  margin-left: 10%;*/
+                                                    /*  }*/
+                                                    /*}*/
+                                                    
+                                                    /*   @media only screen and (min-width: 1220px){*/
+                                                    /* #work .row {*/
+                                                    /*  margin-left: -15px;*/
+                                                    /*  }*/
+                                                    /*} */
+                                                    
+                                                    
+                                   
