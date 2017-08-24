@@ -145,65 +145,65 @@ font-weight:600;
   
  
  /*-----------------------WORKProjectBoxes MEDIA---------------------------*/
-     @media only screen and (min-width: 990px){
- #work .row {
-  margin-left: 5%;
-  }
-}
-     @media only screen and (min-width: 1000px){
- #work .row {
-  margin-left: 10%;
-  }
-}
-
-   @media only screen and (min-width: 1220px){
- #work .row {
-  margin-left: -15px;
-  }
-} 
-
-
-
-     @media only screen and (min-width: 550px){
- #work .projectBox{
-     float:left;
-  height:30rem;
-  width:100%;
-  margin-bottom:3rem;
-  margin-right:3rem;
-  margin-left:3rem;
-  text-align:center;
-  padding:1rem; 
-  background-color:white;
-  }
-}
-     @media only screen and (min-width: 750px){
- #work .projectBox{
-     float:left;
-  max-width:35rem;
-  height:30rem;
-  margin-bottom:3rem;
-  margin-right:1rem;
-  margin-left:0rem;
-  text-align:center;
-  padding:1rem; 
-  background-color:white;
-  }
-}
-
-@media only screen and (min-width: 1200px){
- #work .row .projectBox{
-     float:left;
-  max-width:35rem;
-  height:30rem;
-  margin-bottom:3rem;
-  margin-right:3rem;
-  margin-left:1rem;
-  text-align:center;
-  padding:1rem; 
-  background-color:white;
-  }
-}
+                                                    /*     @media only screen and (min-width: 990px){*/
+                                                    /* #work .row {*/
+                                                    /*  margin-left: 5%;*/
+                                                    /*  }*/
+                                                    /*}*/
+                                                    /*     @media only screen and (min-width: 1000px){*/
+                                                    /* #work .row {*/
+                                                    /*  margin-left: 10%;*/
+                                                    /*  }*/
+                                                    /*}*/
+                                                    
+                                                    /*   @media only screen and (min-width: 1220px){*/
+                                                    /* #work .row {*/
+                                                    /*  margin-left: -15px;*/
+                                                    /*  }*/
+                                                    /*} */
+                                                    
+                                                    
+                                                    
+                                                    /*     @media only screen and (min-width: 550px){*/
+                                                    /* #work .projectBox{*/
+                                                    /*     float:left;*/
+                                                    /*  height:30rem;*/
+                                                    /*  width:100%;*/
+                                                    /*  margin-bottom:3rem;*/
+                                                    /*  margin-right:3rem;*/
+                                                    /*  margin-left:3rem;*/
+                                                    /*  text-align:center;*/
+                                                    /*  padding:1rem; */
+                                                    /*  background-color:white;*/
+                                                    /*  }*/
+                                                    /*}*/
+                                                    /*     @media only screen and (min-width: 750px){*/
+                                                    /* #work .projectBox{*/
+                                                    /*     float:left;*/
+                                                    /*  max-width:35rem;*/
+                                                    /*  height:30rem;*/
+                                                    /*  margin-bottom:3rem;*/
+                                                    /*  margin-right:1rem;*/
+                                                    /*  margin-left:0rem;*/
+                                                    /*  text-align:center;*/
+                                                    /*  padding:1rem; */
+                                                    /*  background-color:white;*/
+                                                    /*  }*/
+                                                    /*}*/
+                                                    
+                                                    /*@media only screen and (min-width: 1200px){*/
+                                                    /* #work .row .projectBox{*/
+                                                    /*     float:left;*/
+                                                    /*  max-width:35rem;*/
+                                                    /*  height:30rem;*/
+                                                    /*  margin-bottom:3rem;*/
+                                                    /*  margin-right:3rem;*/
+                                                    /*  margin-left:1rem;*/
+                                                    /*  text-align:center;*/
+                                                    /*  padding:1rem; */
+                                                    /*  background-color:white;*/
+                                                    /*  }*/
+                                                    /*}*/
 
 
 /*--------------WORK MEDIA^^----------------------------------------------*/
@@ -292,5 +292,43 @@ border-radius:9%;
 .iconList li{
         display:inline;
         margin:0.5rem;
-        
+
+}
+.iconList li a{
+    color:black;
+}
+
+
+
+@media only screen and (max-width:990px){
+.contactSpeech{
+    display:none;
+    width:15rem;
+    height:10rem;
+    background-color:beige;
+    float:right;
+    margin-bottom:5rem;
+    border-top-left-radius:20%;
+    border-top-right-radius:20%;
+    border-bottom-right-radius:20%;
+    padding:1rem;
+}
+}
+@media only screen and (min-width:1000px){
+    .contactSpeech{
+    width:15rem;
+    height:10rem;
+    background-color:beige;
+    float:right;
+    margin-bottom:5rem;
+    border-top-left-radius:20%;
+    border-top-right-radius:20%;
+    border-bottom-right-radius:20%;
+    padding:1rem;
+}
+}
+
+.contactSpeech p{
+    margin:20% auto;
+    font-size:0.9rem;
 }
