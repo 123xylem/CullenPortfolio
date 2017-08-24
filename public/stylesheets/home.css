@@ -255,11 +255,6 @@ border-radius:9%;
 }
 
 
-@media only screen and (max-width:600px){
-    .contactBtn{
-        margin:30% 0 0 -10%;
-    }
-}
 
 
 .contactBtn{
@@ -272,6 +267,13 @@ border-radius:9%;
     -webkit-animation-delay: 5s;
     -webkit-animation-iteration-count: infinite;
 }
+
+@media only screen and (max-width:990px){
+    .contactBtn{
+        margin:30% 0% ;
+    }
+}
+
 
 #contact .contactList{
     display:none;
