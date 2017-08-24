@@ -10,6 +10,346 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
+        <style>
+            @import "gallery.css";
+@import "responsive.css";
+@import "home.css";
+@import "about.css";
+@import "contact.css";
+@import "footer.css";
+@import "studies.css";
+@import "jquery.css";
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+   font-family: 'Open Sans', sans-serif;
+   background-color:white;
+   margin:0;
+   margin-bottom: 5rem;
+   padding:0;
+   width:100%;
+}
+
+.navbar{
+    margin-bottom: 10rem;
+}
+
+
+h1{
+    font-size:3rem;
+    font-weight: 700;
+    text-decoration: underline;
+ margin-left: 5rem;
+ margin-bottom:5rem;}
+
+h2{
+    text-decoration: underline;
+     margin-left: 3rem;
+     margin-bottom:5rem;
+    
+}
+
+#me{background-color:white;
+    }
+
+.meWrapper{
+    margin-left:7rem;
+    margin-right:10rem;
+    margin-bottom: 10rem;
+
+}
+
+.expandable{
+          background: linear-gradient(to bottom right, silver 1%, white 50%); 
+    border:1px solid black;
+
+}
+.expandable2{
+          background: linear-gradient(to bottom right, silver 1%, white 50%); 
+    border:1px solid black;
+
+}
+
+.meSkills{
+    margin-right:2rem;
+}
+.meList{
+    list-style:none;
+}
+
+
+.homeTitle{
+    text-align:center;
+    margin-bottom:5rem;
+    margin-top:-40px;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.homeH4{
+    font-weight: 600;
+    color:black;
+margin-top:1rem;    
+    text-align: center;
+
+text-decoration:underline;
+}
+
+/*.expandable{*/
+/*    float:right;*/
+/*}*/
+/*.expandable2{*/
+/*    float:left;*/
+/*}*/
+/*-----------------------------meMedia----------------------*/
+
+
+
+/*@media only screen and (min-width: 990px){*/
+/*    #me > div.meWrapper > div{*/
+/*        margin-left:16%;*/
+/*    }*/
+/*    }*/
+    
+ 
+
+
+ /*        @media only screen and (min-width:700px){*/
+ /*  #me .homeImg{*/
+ /*        margin-right: 0%;*/
+ /*        border:1px solid black;*/
+ /*    }*/
+ /*}*/
+ 
+ /* @media only screen and (min-width:750px){*/
+ /*  #me .homeImg{*/
+ /*        margin-right: 15%;*/
+ /*        border:1px solid black;*/
+ /*    }*/
+ /*}*/
+ /*  @media only screen and (min-width:800px){*/
+ /*  #me .homeImg{*/
+ /*        margin-right: 10%;*/
+ /*        border:1px solid black;*/
+ /*    }*/
+ /*}*/
+
+ /*  @media only screen and (min-width:890px){*/
+ /*  #me .homeImg{*/
+ /*        margin-right: 15%;*/
+ /*        border:1px solid black;*/
+ /*    }*/
+ /*}*/
+
+
+    
+ /*        @media only screen and (min-width:990px){*/
+ /*  #me .homeImg{*/
+ /*        margin-right: 30%;*/
+ /*        border:1px solid black;*/
+ /*    }*/
+ /*}*/
+
+    
+ 
+ 
+
+
+
+
+                      /*--------------------------------WORK CSS-------------------------------*/
+.homeH3{
+    font-size:2.2rem;
+    margin-left:2rem;
+margin-bottom:3rem;    
+text-decoration:underline;
+font-weight:600;
+}
+
+ #work{
+     padding-top:3rem;
+     background-color:#eee9e9;
+
+ }
+ .workWrapper{
+      margin-left:5rem;                
+      margin-right:5rem;       
+      /*margin-bottom:3rem;*/
+      padding-bottom: 3rem;
+      }
+      
+   
+
+
+                      
+ #work .projectBox{
+     float:left;
+  max-width:50rem;
+  height:30rem;
+  margin-bottom:3rem;
+  margin-right:30%;
+  margin-left:30%;
+  text-align:center;
+  padding:1rem; 
+  background-color:white;
+  }
+  
+ 
+ /*-----------------------WORKProjectBoxes MEDIA---------------------------*/
+     @media only screen and (min-width: 990px){
+ #work .row {
+  margin-left: 5%;
+  }
+}
+     @media only screen and (min-width: 1000px){
+ #work .row {
+  margin-left: 10%;
+  }
+}
+
+   @media only screen and (min-width: 1220px){
+ #work .row {
+  margin-left: -15px;
+  }
+} 
+
+
+
+     @media only screen and (min-width: 550px){
+ #work .projectBox{
+     float:left;
+  height:30rem;
+  width:100%;
+  margin-bottom:3rem;
+  margin-right:3rem;
+  margin-left:3rem;
+  text-align:center;
+  padding:1rem; 
+  background-color:white;
+  }
+}
+     @media only screen and (min-width: 750px){
+ #work .projectBox{
+     float:left;
+  max-width:35rem;
+  height:30rem;
+  margin-bottom:3rem;
+  margin-right:1rem;
+  margin-left:0rem;
+  text-align:center;
+  padding:1rem; 
+  background-color:white;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+ #work .row .projectBox{
+     float:left;
+  max-width:35rem;
+  height:30rem;
+  margin-bottom:3rem;
+  margin-right:3rem;
+  margin-left:1rem;
+  text-align:center;
+  padding:1rem; 
+  background-color:white;
+  }
+}
+
+
+/*--------------WORK MEDIA^^----------------------------------------------*/
+
+                      
+#work .projectBox h6{
+font-weight:600;
+padding:2px;
+text-align:center;
+  color:black;
+  font-size:2rem;
+}
+
+#work .projectBox img{
+height:12rem;
+width:12rem;  
+  border:1px solid rgba(111, 111,111, 0.5);
+}
+
+#work .projectBox .caption{
+    text-align:center;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+#work .projectBox:hover{
+  transform:scale(1.1);
+  transition: all .2s ease-out;
+}
+
+/*---------------------------------------CONTACT _______________-------------------------------*/
+
+#contact{
+background: linear-gradient(to bottom right, silver 1%, white 50%); 
+}
+ .contactWrapper{
+      margin-left:5rem;                
+      margin-right:5rem;       
+      margin-bottom:3rem;
+      }
+      
+      
+      
+          .homeImg{
+border:2px solid black;
+max-height: 20rem;
+max-width: 25rem;
+margin-top:2rem;
+margin-right:-20rem;
+border-radius:9%;
+}
+
+@media only screen and (max-width:770px){
+          .lastCol{
+              display:none;
+              content:"";
+          }
+          .contactBox{
+              width:50%;
+          }
+      }
+
+
+#contact .contactBox{
+    float:left;
+    max-width:40rem;
+    min-width:20rem;
+}
+
+.contactBtn{
+    margin:30% 30%;
+}
+
+#contact .contactList{
+    display:none;
+    margin:28% 0;
+    margin-left:-5%;
+    text-align: center;
+}
+
+.iconList{
+    list-style: none;
+            margin-top:30%;
+
+}
+.iconList li{
+        display:inline;
+        margin:0.5rem;
+        
+}
+
+
+        </style>
          
               <h1 class="homeTitle"> CHRIS CULLEN | WEB DEV & SEO  </h1>
     
