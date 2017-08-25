@@ -1,5 +1,6 @@
                                   //  mongod --dbpath /data/db --smallfiles
 var express = require ("express"),
+ size = require('window-size'),
 
  app = express();
 
@@ -37,7 +38,6 @@ app.get("/about",function(req,res){
 app.get("/projects",function(req,res){
     res.render("projects");
 })
-
 
 
 

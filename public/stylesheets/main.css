@@ -43,17 +43,11 @@ html{
 background-color:white;    
 }
 
-/*@media only screen and (max-width:500){*/
-/*    #myNavbar > ul.nav.navbar-nav{*/
-/*        margin-top:0.5rem;*/
-/*    }*/
 
-/*}*/
-
-@media only screen and (min-width:960){
+@media only screen and (max-width:980px){
     #myNavbar > ul.navbar-right{
-display:block;
-content:" <em>SEO & Web Dev Professional</em>";
+display:none;
+content:"";
         
     }
 

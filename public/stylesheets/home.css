@@ -69,6 +69,7 @@ text-decoration:underline;
 }
 .meBtn a{
 color:black;
+
 font-weight:500;}
 
 
@@ -226,6 +227,7 @@ border:2px solid black;
 max-height: 20rem;
 max-width: 25rem;
 margin-top:5rem;
+margin-bottom:2rem;
 margin-right:-20rem;
 border-radius:9%;
 }
