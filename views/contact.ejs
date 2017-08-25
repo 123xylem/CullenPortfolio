@@ -1,31 +1,68 @@
 <% include ./partials/header.ejs %>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <h1 class="contactTitle"> Contact Us </h1>
 
-<h1 class="contactTitle"> Contact Us </h1>
+        </div>
+        <div class="col-sm-4">
+    <p> Feel Free to give contact me at your convenience.</p>
+   <p> If you have any queries feel free to send  me an email or give me a ring </p>
 
-<img class="contactImg" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRUt8tWlHRh0WjEGgI31QfTUe9DqIbIhpg2SLac3AE-4O6BjsRNA">
-<div>
-    <p> We aim to be an integral part of the our local community and so we strive to make it easy for you to stay in contact with us.</p>
-   <p> If you have any queries feel free to give us a ring or an email! </p>
+            </div>
+                    <div class="col-sm-4">
+                                    <img class="contactImg" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRUt8tWlHRh0WjEGgI31QfTUe9DqIbIhpg2SLac3AE-4O6BjsRNA">
+
 
 </div>
 
-<form class="contactForm responsiveContact">
+        </div>
+    </div>
+</div>
+
+
+<div id="contact">
+    <div class="contactWrapper">
+        
+ <div class="container">
+        <div class="row ">
+            <div class="col-sm-4  contactBox lastCol">
+<form class="contactForm responsiveContact" action="MAILTO:cucullen111@lycos.com" method="post" enctype="text/plain">
        <input type="text" placeholder="Name" name="name">
        <input type="text" placeholder="Email" name="Email">
        <textarea placeholder="Enter Your Query Here" name="message"></textarea>
-       <input type="submit" class="btn btn-default btn-primary">
+       <input type="submit" value="send" class="btn btn-default btn-primary">
    </form>
-   <div>
+
+            </div>
+            
+                        <div class="col-sm-4 contactBox ">
+
+                <ul class="iconList">
+                    <li> <a href=" https://github.com/123xylem"> <i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a> </li>
+                    <li><a href=" https://codepen.io/collection/nRKNmY/"> <i class="fa fa-codepen fa-3x" aria-hidden="true"></a></i> </li>
+                    <li> <a href="https://www.freecodecamp.org/123xylem/"><i class="fa fa-free-code-camp fa-3x" aria-hidden="true"></i></a>
+</li>
+
+                </ul>
+
+                     
+            </div>
+
+                        <div class="col-sm-4 contactBox">
+
+                
+                                           <div>  
              <div class="responsiveContact" id="map"></div>
     <script>
       function initMap() {
-        var london = {lat:51.39401,  lng:-0.302662};
+        var brisbane = {lat: -27.470125,  lng:153.0251};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
-          center: london
+          center: brisbane
         });
         var marker = new google.maps.Marker({
-          position: london,
+          position: brisbane,
           map: map
         });
       }
@@ -34,14 +71,13 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSlGVsa2fgJGeHrRV62TPbNe_kPrdP3JI&callback=initMap">
     </script>    </div>
 
-    
-    <ul class="responsiveContact contactList">
-        <li> <strong>Phone :</strong> 0201291381301</li>
-        <li> <strong>Email :</strong>LangridgeTherapy@gmail.com</li>
-        <li> <strong>Address :</strong> 112 rutuns road london SW 5</li>
-    </ul>
+            </div>
+            
+            
+    </div>
+                </div>
 
-  
+
    
 <div class="clearfix"></div>
  

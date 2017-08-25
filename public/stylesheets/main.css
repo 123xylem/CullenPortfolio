@@ -1,11 +1,9 @@
-@import "gallery.css";
+@import "projects.css";
 @import "responsive.css";
 @import "home.css";
 @import "about.css";
 @import "contact.css";
 @import "footer.css";
-@import "studies.css";
-@import "jquery.css";
 
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
@@ -14,15 +12,29 @@ body{
    font-family: 'Open Sans', sans-serif;
    background-color:white;
    margin:0;
-   margin-bottom: 5rem;
    padding:0;
    width:100%;
 }
 
+.navbar-default{
+    background: linear-gradient(to bottom right, silver 10%, white 80%);
+}
 .navbar{
     margin-bottom: 10rem;
 }
+.navbar-default .navbar-nav>li>a{
+    
+    color:black;
+    font-weight:600;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a{
 
+    -webkit-transition: all .2s ease-in;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+background-color:white;    
+}
 
 
 h2{
@@ -36,10 +48,7 @@ border-top:2px solid rgba(192,192,192,0.3);
     border-radius: 90%;
     margin:2rem 20% 2rem 20%;
 }
-.btn{
-       background: linear-gradient(to bottom right, silver 5%, white 50%); 
 
-}
 .btn:hover{
     transition:all 0.3s ease-out;
    transform:scale(1,1.3);         

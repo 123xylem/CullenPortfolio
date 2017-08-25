@@ -30,34 +30,72 @@ body{
    width:100%;
 }
 
+.navbar-default{
+    background: linear-gradient(to bottom right, silver 10%, white 80%);
+}
 .navbar{
     margin-bottom: 10rem;
 }
+.navbar-default .navbar-nav>li>a{
+    
+    color:black;
+    font-weight:600;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a{
 
+    -webkit-transition: all .2s ease-in;
+}
 
-h1{
-    font-size:3rem;
-    font-weight: 700;
-    text-decoration: underline;
- margin-left: 5rem;
- margin-bottom:5rem;}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+background-color:white;    
+}
+
 
 h2{
-    text-decoration: underline;
      margin-left: 3rem;
      margin-bottom:5rem;
     
 }
 
+hr{
+border-top:2px solid rgba(192,192,192,0.3);    
+    border-radius: 90%;
+    margin:2rem 20% 2rem 20%;
+}
+
+.btn:hover{
+    transition:all 0.3s ease-out;
+   transform:scale(1,1.3);         
+
+}
+
+
+a i:hover{
+    transform:scale(1,1.2);
+        transition:all 0.2s ease-in;
+
+}
 #me{background-color:white;
     }
 
 .meWrapper{
     margin-left:7rem;
     margin-right:10rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 
 }
+
+#homeTitle h1 {
+    
+  text-align:center;
+    font-weight:900 !important;
+padding:0rem 2rem 1rem 2rem;
+    margin:-4rem 0% 5rem 0%;
+    width:100%;
+    border-radius: 5%;
+}
+
+
 
 .expandable{
           background: linear-gradient(to bottom right, silver 1%, white 50%); 
@@ -69,56 +107,76 @@ h2{
     border:1px solid black;
 
 }
+.homeH4{
+    display:inline-block; 
+padding:1rem 2rem 1rem 2rem;
+font-size: 2.2rem;
+    font-weight: 600;
+    color:black;
+margin-top:1rem;    
+    text-align: center;
+text-decoration:underline;
+  -webkit-animation-delay:1.2s;
+
+}
+
 
 .meSkills{
     margin-right:2rem;
 }
 .meList{
     list-style:none;
+    font-size:1.4rem;
+}
+
+@media only screen and (min-width:899px){
+    .meList{
+        font-size:2rem;
+    }
+}
+
+.fa-check{
+    margin-right:1rem;
 }
 
 
-.homeTitle{
-    text-align:center;
-    margin-bottom:5rem;
-    margin-top:-40px;
-    margin-left:10%;
-    margin-right:10%;
+.meBtn{
+    margin:6rem 45% 0;
+    border:1px solid black;
 }
+.meBtn a{
+color:black;
+font-weight:500;}
 
-.homeH4{
-    font-weight: 600;
-    color:black;
-margin-top:1rem;    
-    text-align: center;
 
-text-decoration:underline;
-}
+
+
 
 
 
                       /*--------------------------------WORK CSS-------------------------------*/
 .homeH3{
-    font-size:2.2rem;
     margin-left:2rem;
 margin-bottom:3rem;    
-text-decoration:underline;
 font-weight:600;
+text-align:center;
+font-size:3.5rem;
+
 }
 
  #work{
      padding-top:3rem;
-     background-color:#eee9e9;
+     background:linear-gradient(to bottom , white 2%, #c7d9e8 70% );
 
  }
  .workWrapper{
       margin-left:5rem;                
       margin-right:5rem;       
-      /*margin-bottom:3rem;*/
       padding-bottom: 3rem;
       }
       
    
+
 
 
                       
@@ -131,29 +189,8 @@ font-weight:600;
   margin-left:30%;
   text-align:center;
   padding:1rem; 
-  background-color:white;
+  /*background-color:white;*/
   }
-  
- 
- /*-----------------------WORKProjectBoxes MEDIA---------------------------*/
-     @media only screen and (min-width: 990px){
- #work .row {
-  margin-left: 5%;
-  }
-}
-     @media only screen and (min-width: 1000px){
- #work .row {
-  margin-left: 10%;
-  }
-}
-
-   @media only screen and (min-width: 1220px){
- #work .row {
-  margin-left: -15px;
-  }
-} 
-
-
 
      @media only screen and (min-width: 550px){
  #work .projectBox{
@@ -165,7 +202,7 @@ font-weight:600;
   margin-left:3rem;
   text-align:center;
   padding:1rem; 
-  background-color:white;
+  /*background-color:white;*/
   }
 }
      @media only screen and (min-width: 750px){
@@ -178,7 +215,7 @@ font-weight:600;
   margin-left:0rem;
   text-align:center;
   padding:1rem; 
-  background-color:white;
+  /*background-color:white;*/
   }
 }
 
@@ -192,13 +229,11 @@ font-weight:600;
   margin-left:1rem;
   text-align:center;
   padding:1rem; 
-  background-color:white;
+  /*background-color:white;*/
   }
 }
 
-
-/*--------------WORK MEDIA^^----------------------------------------------*/
-
+ 
                       
 #work .projectBox h6{
 font-weight:600;
@@ -219,11 +254,18 @@ width:12rem;
     margin-left:10%;
     margin-right:10%;
 }
+#work .projectBox .caption .p{
+font-size:1.4rem;}
 
 #work .projectBox:hover{
   transform:scale(1.1);
   transition: all .2s ease-out;
 }
+
+
+
+
+
 
 /*---------------------------------------CONTACT _______________-------------------------------*/
 
@@ -238,14 +280,6 @@ background: linear-gradient(to bottom right, silver 1%, white 50%);
       
       
       
-          .homeImg{
-border:2px solid black;
-max-height: 20rem;
-max-width: 25rem;
-margin-top:2rem;
-margin-right:-20rem;
-border-radius:9%;
-}
 
 @media only screen and (max-width:770px){
           .lastCol{
@@ -264,27 +298,196 @@ border-radius:9%;
     min-width:20rem;
 }
 
+          .homeImg{
+border:2px solid black;
+max-height: 20rem;
+max-width: 25rem;
+margin-top:5rem;
+margin-right:-20rem;
+border-radius:9%;
+}
+
+
+@media only screen and (min-width:990px){
+    .contactSpeech{
+    width:15rem;
+    height:10rem;
+    background-color:white;
+    float:right;
+    font-family: cursive;
+    border:1px solid rgba(255,240,240, 0.5);
+    margin-bottom:5rem;
+    margin-top:5rem;
+    border-top-left-radius:20%;
+    border-top-right-radius:20%;
+    border-bottom-right-radius:20%;
+        font-size:1.4rem;
+    padding:1rem;
+}
+}
+@media only screen and (min-width:1200px){
+.contactSpeech{
+    width:15rem;
+    height:10rem;
+    background-color:white;
+    float:right;
+    font-family: cursive;
+    font-size:1.4rem;
+    border:1px solid rgba(255,240,240, 0.5);
+    margin-right:3.4rem;
+    margin-top: 5rem;
+    margin-bottom:5rem;
+    border-top-left-radius:20%;
+    border-top-right-radius:20%;
+    border-bottom-right-radius:20%;
+    padding:1rem;
+}
+}
+
+
+.contactSpeech p{
+    margin:10% auto;
+    font-size:1.4rem;
+}
+
+
+
+
 .contactBtn{
     margin:30% 30%;
+    height:5rem;
+    color:black;
+    border:1px solid black;
+    font-size:2.5rem;
+    font-weight:600;
+    -webkit-animation-delay: 5s;
+    -webkit-animation-iteration-count: infinite;
 }
+
+@media only screen and (max-width:990px){
+    .contactBtn{
+        margin:30% 0% ;
+    }
+}
+
 
 #contact .contactList{
     display:none;
-    margin:28% 0;
-    margin-left:-5%;
+    margin:28% 1rem;
+    /*margin-left:-5%;*/
     text-align: center;
+  background: linear-gradient(to bottom right, silver 1%, white 50%); 
+     border-radius:8%;
+
 }
+
+
 
 .iconList{
     list-style: none;
             margin-top:30%;
 
 }
+
 .iconList li{
         display:inline;
         margin:0.5rem;
-        
+
 }
+
+
+@media only screen and (max-width:999px){
+    .iconList li {
+        margin:0 -0.4rem;
+    }
+}
+
+
+
+.iconList li a{
+    color:black;
+    margin:0 1rem;
+}
+
+
+
+
+
+
+/*-----------------------------meMedia----------------------*/
+
+
+
+/*@media only screen and (min-width: 990px){*/
+/*    #me > div.meWrapper > div{*/
+/*        margin-left:16%;*/
+/*    }*/
+/*    }*/
+    
+ 
+
+
+ /*        @media only screen and (min-width:700px){*/
+ /*  #me .homeImg{*/
+ /*        margin-right: 0%;*/
+ /*        border:1px solid black;*/
+ /*    }*/
+ /*}*/
+ 
+ /* @media only screen and (min-width:750px){*/
+ /*  #me .homeImg{*/
+ /*        margin-right: 15%;*/
+ /*        border:1px solid black;*/
+ /*    }*/
+ /*}*/
+ /*  @media only screen and (min-width:800px){*/
+ /*  #me .homeImg{*/
+ /*        margin-right: 10%;*/
+ /*        border:1px solid black;*/
+ /*    }*/
+ /*}*/
+
+ /*  @media only screen and (min-width:890px){*/
+ /*  #me .homeImg{*/
+ /*        margin-right: 15%;*/
+ /*        border:1px solid black;*/
+ /*    }*/
+ /*}*/
+
+
+    
+ /*        @media only screen and (min-width:990px){*/
+ /*  #me .homeImg{*/
+ /*        margin-right: 30%;*/
+ /*        border:1px solid black;*/
+ /*    }*/
+ /*}*/
+
+    
+ 
+ 
+
+
+ /*-----------------------WORKProjectBoxes MEDIA---------------------------*/
+                                                    /*     @media only screen and (min-width: 990px){*/
+                                                    /* #work .row {*/
+                                                    /*  margin-left: 5%;*/
+                                                    /*  }*/
+                                                    /*}*/
+                                                    /*     @media only screen and (min-width: 1000px){*/
+                                                    /* #work .row {*/
+                                                    /*  margin-left: 10%;*/
+                                                    /*  }*/
+                                                    /*}*/
+                                                    
+                                                    /*   @media only screen and (min-width: 1220px){*/
+                                                    /* #work .row {*/
+                                                    /*  margin-left: -15px;*/
+                                                    /*  }*/
+                                                    /*} */
+                                                    
+                                                    
+                                   
 
 
         </style>
