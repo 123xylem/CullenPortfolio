@@ -21,6 +21,8 @@ html{
     height:100%;
 }
 
+/*--------------------------------------NAVBAR-------------------------------------------------?*/
+
 .navbar-default{
     background: linear-gradient(to bottom right, silver 10%, white 80%);
 }
@@ -40,6 +42,23 @@ html{
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
 background-color:white;    
 }
+
+/*@media only screen and (max-width:500){*/
+/*    #myNavbar > ul.nav.navbar-nav{*/
+/*        margin-top:0.5rem;*/
+/*    }*/
+
+/*}*/
+
+@media only screen and (max-width:960){
+    #myNavbar > ul.navbar-right{
+display:block;
+content:" <em>SEO & Web Dev Professional</em>";
+        
+    }
+
+}
+
 
 
 footer{
