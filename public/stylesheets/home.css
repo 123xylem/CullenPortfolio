@@ -90,7 +90,6 @@ font-size:3.5rem;
  #work{
      padding-top:3rem;
      background:linear-gradient(to bottom , white 2%, #c7d9e8 70% );
-     display:flex;
 
  }
  .workWrapper{
@@ -284,8 +283,8 @@ border-radius:9%;
     border:1px solid black;
     font-size:2.5rem;
     font-weight:600;
-    -webkit-animation-delay: 5s;
-    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 7s;
+    -webkit-animation-iteration-count: 3;
 }
 
 @media only screen and (max-width:990px){
