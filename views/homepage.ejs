@@ -201,12 +201,12 @@ RESTFUL Methods</li>
             </div>
             
                         <div class="col-sm-4 contactBox ">
-                                <a class="contactBtn btn btn-default animated bounce" href="javascript:;">Contact Chris Here</a>
+                                <a class="contactBtn btn btn-default animated bounce" href="javascript:;">Contact Chris</a>
                                     <ul class="contactList" style="display:none">
-      <li > <strong>Email:</strong> Cucullen111@lycos.com </li>
-      <li><strong>Phone:</strong> 0426032094 </li>
-               
-      </ul>
+                                          <li > <strong>Email:</strong> Cucullen111@lycos.com </li>
+                                          <li><strong>Phone:</strong> 0426032094 </li>
+                                                   
+                                          </ul>
 
                      
             </div>
@@ -232,10 +232,19 @@ RESTFUL Methods</li>
                      $(".showMe").slideDown();
                      });
 
+                 $(".expandable").click(function(){
+                     $(".showMe").slideUp();
+                     });
+
                  
                  $(".expandable2").mouseenter(function(){
                      $(".showMe2").slideDown();
                  });
+                 
+                       $(".expandable2").click(function(){
+                     $(".showMe2").slideUp();
+                 });
+
                  
                  $(".contactBtn").mouseover(function(){
                      $(".contactList").slideToggle();
