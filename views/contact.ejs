@@ -2,12 +2,12 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
-            <h1 class="contactTitle"> Contact Me </h1>
+            <h1 class="contactTitle animated zoomIn"> Contact Me </h1>
 
         </div>
         <div class="col-sm-4">
-    <p> Feel Free to give contact me at your convenience.</p>
-   <p> If you have any queries feel free to send  me an email or give me a ring </p>
+    <p class="animated zoomIn"> Feel Free to give contact me at your convenience.</p>
+   <p class="animated zoomIn"> If you have any queries feel free to send  me an email or give me a ring </p>
                                        <ul class="contactPageList">
       <li > <strong>Email:</strong> Cucullen111@lycos.com </li>
       <li><strong>Phone:</strong> 0426032094 </li>
@@ -18,7 +18,7 @@
             </div>
                     <div class="col-sm-4 lastCol">
                                  
-                                    <img class="contactImg" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRUt8tWlHRh0WjEGgI31QfTUe9DqIbIhpg2SLac3AE-4O6BjsRNA">
+                    <img class="contactImg animated zoomIn" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRUt8tWlHRh0WjEGgI31QfTUe9DqIbIhpg2SLac3AE-4O6BjsRNA">
                                  
 
 
@@ -108,7 +108,7 @@
     var message = document.getElementById('inputMessage')
 
     if (!name.value || !email.value || !message.value) {
-      alertify.error("Please check your entries");
+      alert("Please check your entries");
       return false;
     } else {
       $.ajax({

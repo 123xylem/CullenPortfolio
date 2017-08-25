@@ -9,9 +9,27 @@
 }
 
 .meText{
-margin-left:2rem;}
+    margin-top:2rem;
+margin-left:2rem;
+    line-height: 2.4;
+}
 
 #aboutWrapper{
     margin-left:1rem;
     margin-right:1rem;
+    margin-bottom: 8rem;
+}
+
+@media only screen and (min-width:770px){
+    .certPic{
+    max-height:20rem;
+    width:30rem;
+    margin-left: 5rem;
+}
+}
+
+    .certPic{
+    max-height:20rem;
+    max-width:30rem;
+    margin-left: 1rem;
 }
