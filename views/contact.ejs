@@ -1,32 +1,28 @@
 <% include ./partials/header.ejs %>
 <div class="container">
+  
     <div class="row">
+      
         <div class="col-sm-4">
             <h1 class="contactTitle animated zoomIn"> Contact Me </h1>
-
         </div>
-        <div class="col-sm-4">
-    <p class="animated zoomIn"> Feel Free to give contact me at your convenience.</p>
-   <p class="animated zoomIn"> If you have any queries feel free to send  me an email or give me a ring </p>
-                                       <ul class="contactPageList">
-      <li > <strong>Email:</strong> Cucullen111@lycos.com </li>
-      <li><strong>Phone:</strong> 0426032094 </li>
-               
-      </ul>
-
-
+        
+        
+          <div class="col-sm-4">
+              <p class="animated zoomIn"> Feel Free to give contact me at your convenience.</p>
+             <p class="animated zoomIn"> If you have any queries feel free to send  me an email or give me a ring </p>
+                                                 <ul class="contactPageList">
+                <li > <strong>Email:</strong> Cucullen111@lycos.com </li>
+                <li><strong>Phone:</strong> 0426032094 </li>
+                         
+                </ul>
             </div>
+                   
                     <div class="col-sm-4 lastCol">
-                                 
                     <img class="contactImg animated zoomIn" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRUt8tWlHRh0WjEGgI31QfTUe9DqIbIhpg2SLac3AE-4O6BjsRNA">
-                                 
+                      </div>
 
-
-</div>
-
-        </div>
     </div>
-</div>
 
 
 <div id="contact">
@@ -62,40 +58,38 @@
 
             </div>
             
-                        <div class="col-sm-4 contactBox ">
-
-                <ul class="iconList">
+               <div class="col-sm-4 contactBox ">
+                  <ul class="iconList">
                     <li> <a href=" https://github.com/123xylem"> <i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a> </li>
                     <li><a href=" https://codepen.io/collection/nRKNmY/"> <i class="fa fa-codepen fa-3x" aria-hidden="true"></a></i> </li>
-                    <li> <a href="https://www.freecodecamp.org/123xylem/"><i class="fa fa-free-code-camp fa-3x" aria-hidden="true"></i></a>
-</li>
-
+                    <li> <a href="https://www.freecodecamp.org/123xylem/"><i class="fa fa-free-code-camp fa-3x" aria-hidden="true"></i></a></li>
                 </ul>
-
-                     
             </div>
 
-                        <div class="col-sm-4 contactBox lastCol">
 
-                
-                                           <div>  
-             <div class="responsiveContact" id="map"></div>
-    <script>
-      function initMap() {
-        var brisbane = {lat: -27.470125,  lng:153.0251};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
-          center: brisbane
-        });
-        var marker = new google.maps.Marker({
-          position: brisbane,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSlGVsa2fgJGeHrRV62TPbNe_kPrdP3JI&callback=initMap">
-    </script>    </div>
+          <div class="col-sm-4 contactBox lastCol">
+            
+               <div>  
+             <div class="responsiveContact" id="map"></div>                                </div>
+
+                <script>
+                  function initMap() {
+                    var brisbane = {lat: -27.470125,  lng:153.0251};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 12,
+                      center: brisbane
+                    });
+                    var marker = new google.maps.Marker({
+                      position: brisbane,
+                      map: map
+                    });
+                  }
+
+                </script>
+              
+              <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSlGVsa2fgJGeHrRV62TPbNe_kPrdP3JI&callback=initMap">
+              </script>    
 
 
 
@@ -124,10 +118,13 @@
   });
 });
 </script>
-            </div>
+
+
+</div>
             </div>
             
-    </div>                </div>
+    </div>             
+    </div>
 </div>
 
 <% include ./partials/footer.ejs %>
