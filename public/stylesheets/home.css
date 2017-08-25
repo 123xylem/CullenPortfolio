@@ -4,7 +4,7 @@
 .meWrapper{
     margin-left:7rem;
     margin-right:10rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 
 }
 
@@ -16,7 +16,6 @@ padding:0rem 2rem 1rem 2rem;
     margin:-4rem 0% 5rem 0%;
     width:100%;
     border-radius: 5%;
-   /*background: linear-gradient(to bottom right, silver 1%, white 10%); */
 }
 
 
@@ -35,10 +34,22 @@ padding:0rem 2rem 1rem 2rem;
 .meSkills{
     margin-right:2rem;
 }
+
 .meList{
     list-style:none;
 }
+.fa-check{
+    margin-right:1rem;
+}
 
+
+.meBtn{
+    margin:6rem 45% 0;
+    border:1px solid black;
+}
+.meBtn a{
+color:black;
+font-weight:500;}
 
 
 .homeH4{
@@ -50,9 +61,7 @@ padding:1rem 2rem 1rem 2rem;
 margin-top:1rem;    
     text-align: center;
 text-decoration:underline;
-  /*-webkit-animation-iteration-count: 4;*/
   -webkit-animation-delay:1.2s;
-  /*-webkit-animation-duration:1.2s;*/
 
 }
 
@@ -72,7 +81,7 @@ font-size:3.5rem;
 
  #work{
      padding-top:3rem;
-     background-color:#eee9e9;
+     background-color:#c7d9e8;
 
  }
  .workWrapper{
@@ -82,6 +91,12 @@ font-size:3.5rem;
       }
       
    
+
+@media only screen and (min-width:990){
+    div.col-xs-12.col-sm-6.thirdCol{
+        margin-left:30%;
+    }
+}
 
 
                       
@@ -137,7 +152,6 @@ font-size:3.5rem;
   background-color:white;
   }
 }
-
 
  
                       
