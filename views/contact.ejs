@@ -2,16 +2,24 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
-            <h1 class="contactTitle"> Contact Us </h1>
+            <h1 class="contactTitle"> Contact Me </h1>
 
         </div>
         <div class="col-sm-4">
     <p> Feel Free to give contact me at your convenience.</p>
    <p> If you have any queries feel free to send  me an email or give me a ring </p>
+                                       <ul class="contactPageList">
+      <li > <strong>Email:</strong> Cucullen111@lycos.com </li>
+      <li><strong>Phone:</strong> 0426032094 </li>
+               
+      </ul>
+
 
             </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 lastCol">
+                                 
                                     <img class="contactImg" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRUt8tWlHRh0WjEGgI31QfTUe9DqIbIhpg2SLac3AE-4O6BjsRNA">
+                                 
 
 
 </div>
@@ -26,13 +34,31 @@
         
  <div class="container">
         <div class="row ">
-            <div class="col-sm-4  contactBox lastCol">
-<form class="contactForm responsiveContact" action="MAILTO:cucullen111@lycos.com" method="post" enctype="text/plain">
-       <input type="text" placeholder="Name" name="name">
-       <input type="text" placeholder="Email" name="Email">
-       <textarea placeholder="Enter Your Query Here" name="message"></textarea>
-       <input type="submit" value="send" class="btn btn-default btn-primary">
-   </form>
+            <div class="col-sm-4  contactBox ">
+                
+                      <form style="margin-top: 3rem;" id="contact-form">
+        <div class="form-group center-block">
+          <label for="inputName">Name</label>
+          <input type="text" class="form-control contact-input" id="inputName" placeholder="Name" name="name">
+        </div>
+        <div class="form-group center-block">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control contact-input" id="inputEmail" placeholder="Email" name="email">
+        </div>
+        <div class="form-group center-block">
+          <label for="inputMessage">Message</label>
+          <textarea id="inputMessage" class="form-control contact-input" rows="3" placeholder="Your Message" name="message"></textarea>
+        </div>
+                            <input type="text" name="_gotcha" class="display-none">
+
+                            <div class="text-center">
+          <button style=" margin-top:-4rem; margin-left:8rem;" class="btn btn-default" type="submit" id="email-submit-btn" value="Send">
+            Submit
+          </button>
+
+                </div>
+      </form>
+
 
             </div>
             
@@ -49,7 +75,7 @@
                      
             </div>
 
-                        <div class="col-sm-4 contactBox">
+                        <div class="col-sm-4 contactBox lastCol">
 
                 
                                            <div>  
@@ -72,14 +98,36 @@
     </script>    </div>
 
             </div>
-            
+            </div>
             
     </div>
                 </div>
 
 
    
-<div class="clearfix"></div>
- 
+<script>
+    $(document).ready(function() {
+  $('#contact-form').submit(function(e) {
+    var name    = document.getElementById('inputName')
+    var email   = document.getElementById('inputEmail')
+    var message = document.getElementById('inputMessage')
+
+    if (!name.value || !email.value || !message.value) {
+      alertify.error("Please check your entries");
+      return false;
+    } else {
+      $.ajax({
+        method: 'POST',
+        url: '//formspree.io/cucullen111@lycos.com',
+        data: $('#contact-form').serialize(),
+        datatype: 'json'
+      });
+      e.preventDefault();
+      $(this).get(0).reset();
+      alert("Success Message sent");
+    }
+  });
+});
+</script>
 
 <% include ./partials/footer.ejs %>
