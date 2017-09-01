@@ -9,15 +9,43 @@
 }
 
 #homeTitle h1 {
-    
-  text-align:center;
-    font-weight:900 !important;
-padding:0rem 2rem 1rem 2rem;
+    text-align:center;
+   font-weight:900 !important;
+   padding:0rem 2rem 1rem 2rem;
     margin:-4rem 0% 5rem 0%;
     width:100%;
-    border-radius: 5%;
+
 }
 
+@media all and (min-width:1180px){
+    #homeTitle{
+    width:57%;
+margin:0 auto;}
+
+#homeTitle h1 {
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .10em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto 3rem; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end 10;
+    text-align:center;
+}
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: black }
+  50% { border-color: transparent; }
+}
 
 
 .expandable{
@@ -47,14 +75,28 @@ text-decoration:underline;
 .meSkills{
     margin-right:2rem;
 }
+
 .meList{
-    list-style:none;
+    font-size:1.2rem;
+        list-style:none;
+        padding-left:1rem;
+
+}
+
+
+@media only screen and (min-width:770px){
+.meList{
     font-size:1.4rem;
+            padding-left:1.2rem;
+
+}
 }
 
 @media only screen and (min-width:899px){
     .meList{
         font-size:2rem;
+                padding-left:2rem;
+
     }
 }
 
@@ -300,7 +342,7 @@ border-radius:9%;
     display:none;
     margin:28% 1rem;
     padding:0.5rem;
-    font-size:1rem;
+    font-size:1.8rem;
     text-align: center;
   background: linear-gradient(to bottom right, silver 1%, white 50%); 
      border-radius:8%;
